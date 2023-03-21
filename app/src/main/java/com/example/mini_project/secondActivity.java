@@ -35,27 +35,11 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
 
         switch (view.getId()){
             case R.id.cv1:
-                i = new Intent(this, ch1.class);
-                startActivity(i);
-                break;
-
             case R.id.cv2:
-                i = new Intent(this, ch2.class);
-                startActivity(i);
-                break;
-
             case R.id.cv3:
-                i = new Intent(this, ch3.class);
-                startActivity(i);
-                break;
-
             case R.id.cv4:
-                i = new Intent(this, ch4.class);
-                startActivity(i);
-                break;
-
             case R.id.cv5:
-                i = new Intent(this, ch5.class);
+                i = new Intent(this, topics.class);
                 startActivity(i);
                 break;
         }
