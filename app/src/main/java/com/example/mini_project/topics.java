@@ -48,7 +48,7 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
             case R.id.tp7:
             case R.id.tp8:
 
-                i = new Intent(this, ch1.class);
+                i = new Intent(this, introduction.class);
                 startActivity(i);
                 break;
         }

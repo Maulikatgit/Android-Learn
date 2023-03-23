@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".introduction">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Introduction"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      Android is a Linux based operating system. It is designed primarily for touch screen mobile devices such as tablet computers and smartphones. The android operating system has developed more in last 15 years starting from black and white phones to recent smartphones or mini computers. \n\n     The android is a powerful operating system and it supports large number of applications in Smartphones and other supportable devices. These applications are more comfortable and advanced for the users. The hardware that supports android software is based on ARM architecture platform.\n\n      The android is an open source operating system it means no license, distribution and development fee and any one can use it. The android has got millions of apps available that can help you managing your life easily and it is available in low prices in market that's why android is very popular.\n\n      The android development supports with the full java programming language. Even other packages that are API and JSE are not supported. The first version 1.0 of software development kit (SDK) was released in 2008 and latest updated version is 9.0 with code name of Pie."
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="History of Android"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv2"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/tv3"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      The code names of android are from A to P at present, such as Aestro, Blender, Cupcake, Donut, Eclair, Froyo, Gingerbread, Honeycomb, Ice Cream Sandwitch, Jelly Bean, KitKat, Lollipop, Marshmallow, Nougat, Oreo and Pie. Let's understand the android history below. \n\nAndy Rubin founded Android Incorporation in Palo Alto, California, United States in October, 2003.\n\nGoogle acquired android Incorporation in 17th August 2005. Since then, it is in the subsidiary of Google Incorporation.\n\nThe key employees of Android Incorporation are Andy Rubin, Rich Miner, Chris White and Nick Sears.\n\nAndroid is the nick name of Andy Rubin given by coworkers because of his love to robots. Google announces the development of android OS in 2007.\nThe first phone released that ran the Android OS which is T-Mobile G1.HTC launched the first android mobile in 2008."/>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Features of Android"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv4"/>
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/tv5"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      As Android is open source and freely available to manufacturers for customization, there are no fixed hardware and software configurations.\n\nHowever, Android itself supports the following features:\n   1. Storage — Uses SQLite, a lightweight relational database, for data storage.\n  2. Connectivity — Supports GSM/EDGE, IDEN, CDMA, EV-DO, UMTS, Bluetooth (includes A2DP and AVRCP), WiFi, LTE, and WiMAX.\n    3. Messaging — Supports both SMS and MMS.\n  4. Web browser — Based on the open-source WebKit, together with Chrome’s V8 JavaScript engine.\n  5. Media support — Includes support for the following media: H.263, H.264 (in 3GP or MP4 container), MPEG-4 SP, AMR, AMR-WB (in 3GP container), AAC, HE-AAC (in MP4 or 3GP container), MP3, MIDI, Ogg Vorbis, WAV, JPEG, PNG, GIF, and BMP.\n  6. Hardware support — Accelerometer Sensor, Camera, Digital Compass, Proximity Sensor, and GPS Multi.\n  7. Multi-touch — Supports multi-touch screens Multi.\n  8. Multi-tasking — Supports multi-tasking applications.\n  9. Flash support — Android 2.3 supports Flash 10.1.\n  10. Tethering — Supports sharing of Internet connections as a wired/wireless hotspot."/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -37,10 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (view.getId()){
             case R.id.cv1:
-                i = new Intent(this, secondActivity.class);
-                startActivity(i);
-                break;
-
             case R.id.cv2:
             case R.id.cv3:
             case R.id.cv4:
