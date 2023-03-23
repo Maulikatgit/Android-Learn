@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".architecture">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Android Architecture or Android Software Stack"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="500dp"
+            android:layout_height="300dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/architecture"
+            android:layout_below="@id/tv1"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Linux kernel"
+            android:textSize="20dp"
+            android:layout_below="@id/iv"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      The android uses the powerful Linux kernel and it supports wide range of hardware drivers. The kernel is the heart of the operating system that manages input and output requests from software. This provides basic system functionalities like process management, memory management, device management like camera, keypad, display etc the kernel handles all the things. The Linux is really good at networking and it is not necessary to interface it to the peripheral hardware. The kernel itself does not interact directly with the user but rather interacts with the shell and other programs as well as with the hard ware devices on the system."
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Linux kernel"
+            android:textSize="20dp"
+            android:layout_below="@id/tv3"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv4"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      In addition to a set of standard Java development libraries (providing support for such general purpose tasks as string handling, networking and file manipulation), the Android development environment also includes the Android Libraries. These are a set of Java-based libraries that are specific to Android development. Examples of libraries in this category include the application framework libraries in addition to those that facilitate user interface building, graphics drawing and database access.\n\nA summary of some key core Android libraries available to the Android developer is as follows:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv5"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      1. android.app – Provides access to the application model and is the cornerstone of all Android applications.\n\n    2. android.content – Facilitates content access, publishing and messaging between applications and application components.\n\n    3.android.database – Used to access data published by content providers and includes SQLite database management classes.\n\n    4. android.graphics – A low-level 2D graphics drawing API including colors, points, filters, rectangles and canvases.\n\n    5. android.hardware – Presents an API providing access to hardware such as the accelerometer and light sensor.\n\n  6. android.opengl – A Java interface to the OpenGL ES 3D graphics rendering API.\n\n    7.android.os – Provides applications with access to standard operating system services including messages, system services and inter-process communication.\n\n    8. android.media – Provides classes to enable playback of audio and video.\n\n   9. android.net – A set of APIs providing access to the network stack. Includes android.net.wifi, which provides access to the device’s wireless stack.\n\n  10. android.print – Includes a set of classes that enable content to be sent to configured printers from within Android applications.\n\n   11. android.provider – A set of convenience classes that provide access to standard Android content provider databases such as those maintained by the calendar and contact applications.\n\n   12.android.text' – Used to render and manipulate text on a device display.\n\n  13. android.util – A set of utility classes for performing tasks such as string and number conversion, XML handling and date and time manipulation.\n\n    14. android.view – The fundamental building blocks of application user interfaces.\n\n   15. android.widget - A rich collection of pre-built user interface components such as buttons, labels, list views, layout managers, radio buttons etc.\n\n      Having covered the Java-based libraries in the Android runtime, it is now time to turn our attention to the C/C++ based libraries contained in this layer of the Android software stack."
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="C/C++ Libraries"
+            android:textSize="20dp"
+            android:layout_below="@id/tv6"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv7"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      The Android runtime core libraries outlined in the preceding section are Java-based and provide the primary APIs for developers writing Android applications. It is important to note, however, that the core libraries do not perform much of the actual work and are, in fact, essentially Java “wrappers” around a set of C/C++ based libraries. When making calls, for example, to the android.opengl library to draw 3D graphics on the device display, the library actually ultimately makes calls to the OpenGL ES C++ library which, in turn, works with the underlying Linux kernel to perform the drawing tasks.\n\n      C/C++ libraries are included to fulfill a wide and diverse range of functions including 2D and 3D graphics drawing, Secure Sockets Layer (SSL) communication, SQLite database management, audio and video playback, bitmap and vector font rendering, display subsystem and graphic layer management and an implementation of the standard C system library (libc).\n\n     In practice, the typical Android application developer will access these libraries solely through the Java based Android core library APIs. In the event that direct access to these libraries is needed, this can be achieved using the Android Native Development Kit (NDK), the purpose of which is to call the native methods of non-Java or Kotlin programming languages (such as C and C++) from within Java code using the Java Native Interface (JNI)."
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Android runtime"
+            android:textSize="20dp"
+            android:layout_below="@id/tv8"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv9"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      At the same layer as the libraries, the Android runtime provides a set of core libraries that enable developers to write Android apps using the Java programming language. The Android runtime also includes the Dalvik virtual machine, which enables every Android application to run in its own process, with its own instance of the Dalvik virtual machine (Android applications are compiled into the Dalvik executables). Dalvik is a specialized virtual machine designed specifically for Android and optimized for battery-powered mobile devices with limited memory and CPU."
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Android Framework"
+            android:textSize="20dp"
+            android:layout_below="@id/tv10"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv11"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      The Application Framework is a set of services that collectively form the environment in which Android applications run and are managed. This framework implements the concept that Android applications are constructed from reusable, interchangeable and replaceable components. This concept is taken a step further in that an application is also able to publish its capabilities along with any corresponding data so that they can be found and reused by other applications.\n\n The Android framework includes the following key services:\n"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv12"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      1. Activity Manager – Controls all aspects of the application lifecycle and activity stack.\n\n      2. Content Providers – Allows applications to publish and share data with other applications.\n\n      3. Resource Manager – Provides access to non-code embedded resources such as strings, color settings and user interface layouts.\n\n        4. Notifications Manager – Allows applications to display alerts and notifications to the user.\n\n      5. View System – An extensible set of views used to create application user interfaces.\n\n        6. Package Manager – The system by which applications are able to find out information about other applications currently installed on the device.\n\n      7. Telephony Manager – Provides information to the application about the telephony services available on the device such as status and subscriber information.\n\n      8. Location Manager – Provides access to the location services allowing an application to receive updates about location changes."
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Applications"
+            android:textSize="20dp"
+            android:layout_below="@id/tv13"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv14"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5sp"
+            android:text="      On the top of android framework, there are applications. All applications such as home, contact, settings, games, browsers are using android framework that uses android runtime and libraries. Android runtime and native libraries are using linux kernal."
+            android:textSize="15dp" />
+    </RelativeLayout>
+</ScrollView>

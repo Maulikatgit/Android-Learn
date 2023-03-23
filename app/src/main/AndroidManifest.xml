@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Mini_Project"
         tools:targetApi="31">
         <activity
+            android:name=".architecture"
+            android:exported="false" />
+        <activity
             android:name=".introduction"
             android:exported="false" />
         <activity
