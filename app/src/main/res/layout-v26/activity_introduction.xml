@@ -58,7 +58,7 @@
             android:layout_below="@id/tv3"
             android:justificationMode="inter_word"
             android:lineSpacingExtra="5sp"
-            android:text="@string/introduction_tv4"/>
+            android:text="@string/architecture_tv4"/>
 
         <TextView
             android:id="@+id/tv5"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="@string/introduction_tv5"
+            android:text="@string/architecture_tv5"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_below="@+id/tv4"/>
@@ -85,7 +85,7 @@
             android:layout_below="@id/tv5"
             android:justificationMode="inter_word"
             android:lineSpacingExtra="5sp"
-            android:text="@string/introduction_tv6"/>
+            android:text="@string/architecture_tv6"/>
 
     </RelativeLayout>
 </ScrollView>

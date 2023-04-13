@@ -9,26 +9,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:weightSum="10"
         android:orientation="vertical">
 
-        <GridLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="8"
-            android:columnCount="2"
-            android:rowCount="3"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
             android:alignmentMode="alignMargins"
             android:columnOrderPreserved="false"
             android:padding="15dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tp1"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
                 android:layout_margin="15dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="20dp">
@@ -41,12 +37,13 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/tv1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:text="Android \nIntroduction"
-                        android:textSize="18dp"
+                        android:text="@string/topics_tv1"
+                        android:textSize="18sp"
                         android:textStyle="bold">
                     </TextView>
                 </LinearLayout>
@@ -54,11 +51,10 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tp2"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
                 android:layout_margin="15dp"
+                android:layout_below="@+id/tp1"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="20dp">
 
@@ -74,8 +70,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:text="Android\nArchitecture"
-                        android:textSize="18dp"
+                        android:text="@string/topics_tv2"
+                        android:textSize="18sp"
                         android:textStyle="bold">
                     </TextView>
 
@@ -85,11 +81,10 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tp3"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
                 android:layout_margin="15dp"
+                android:layout_below="@+id/tp2"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="20dp">
 
@@ -105,8 +100,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:text="Android \nIntroduction"
-                        android:textSize="18dp"
+                        android:text="@string/topics_tv3"
+                        android:textSize="18sp"
                         android:textStyle="bold">
                     </TextView>
                 </LinearLayout>
@@ -114,10 +109,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tp4"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp3"
                 android:layout_margin="15dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="20dp">
@@ -134,8 +128,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:text="Android\nArchitecture"
-                        android:textSize="18dp"
+                        android:text="@string/topics_tv4"
+                        android:textSize="18sp"
                         android:textStyle="bold">
                     </TextView>
 
@@ -145,11 +139,10 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tp5"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
                 android:layout_margin="15dp"
+                android:layout_below="@id/tp4"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="20dp">
 
@@ -165,7 +158,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:text="Android \nIntroduction"
+                        android:text="@string/topics_tv5"
                         android:textSize="18dp"
                         android:textStyle="bold">
                     </TextView>
@@ -174,10 +167,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tp6"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp5"
                 android:layout_margin="15dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="20dp">
@@ -194,7 +186,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:text="Android\nArchitecture"
+                        android:text="@string/topics_tv6"
                         android:textSize="18dp"
                         android:textStyle="bold">
                     </TextView>
@@ -205,10 +197,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tp7"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp6"
                 android:layout_margin="15dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="20dp">
@@ -225,7 +216,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:text="Android \nIntroduction"
+                        android:text="@string/topics_tv7"
                         android:textSize="18dp"
                         android:textStyle="bold">
                     </TextView>
@@ -234,10 +225,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tp8"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp7"
                 android:layout_margin="15dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="20dp">
@@ -254,7 +244,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:text="Android\nArchitecture"
+                        android:text="@string/topics_tv8"
                         android:textSize="18dp"
                         android:textStyle="bold">
                     </TextView>
@@ -265,10 +255,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tp9"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp8"
                 android:layout_margin="15dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="20dp">
@@ -285,8 +274,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:text="Android \nIntroduction"
-                        android:textSize="18dp"
+                        android:text="@string/topics_tv9"
+                        android:textSize="18sp"
                         android:textStyle="bold">
                     </TextView>
                 </LinearLayout>
@@ -294,10 +283,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/tp10"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp9"
                 android:layout_margin="15dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="20dp">
@@ -314,7 +302,187 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:textAlignment="center"
-                        android:text="Android\nArchitecture"
+                        android:text="@string/topics_tv10"
+                        android:textSize="18sp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tp11"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp10"
+                android:layout_margin="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:text="@string/topics_tv11"
+                        android:textSize="18sp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tp12"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp11"
+                android:layout_margin="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:text="@string/topics_tv12"
+                        android:textSize="18sp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tp13"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp12"
+                android:layout_margin="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:text="@string/topics_tv13"
+                        android:textSize="18sp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tp14"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp13"
+                android:layout_margin="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:text="@string/topics_tv14"
+                        android:textSize="18sp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tp15"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp14"
+                android:layout_margin="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:text="@string/topics_tv15"
+                        android:textSize="18sp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tp16"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp15"
+                android:layout_margin="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:text="@string/topics_tv16"
                         android:textSize="18dp"
                         android:textStyle="bold">
                     </TextView>
@@ -323,6 +491,65 @@
 
             </androidx.cardview.widget.CardView>
 
-        </GridLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tp17"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp16"
+                android:layout_margin="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:text="@string/topics_tv17"
+                        android:textSize="18dp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tp18"
+                android:layout_width="500dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/tp17"
+                android:layout_margin="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:text="@string/topics_tv18"
+                        android:textSize="18dp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

@@ -7,185 +7,267 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/hi"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hey,"
-        android:paddingLeft="40dp"
-        android:textSize="40dp"/>
+        android:layout_height="70dp"
+        app:cardBackgroundColor="@color/lavender">
 
-    <EditText
-        android:id="@+id/name"
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/menubar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, Maulik!"
+            android:layout_marginStart="75dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="350dp"
+            android:src="@drawable/user"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="User"
-        android:paddingLeft="130dp"
-        android:paddingTop="25dp"
-        android:textSize="30dp"/>
+        android:layout_height="match_parent"
+        android:rowCount="4"
+        android:columnCount="2"
+        android:layout_marginTop="150dp"
+        android:columnOrderPreserved="false">
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="11dp"
+            app:cardBackgroundColor="@color/lavender"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv1"
-        android:layout_width="360dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        app:cardElevation="11dp"
-        app:cardCornerRadius="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tutorial"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tutorials"
-                android:textSize="20dp"
-                android:textStyle="bold">
-            </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutorials"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/iv1">
+                </TextView>
 
-        </RelativeLayout>
+            </RelativeLayout>
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv2"
-        android:layout_width="360dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        app:cardElevation="11dp"
-        app:cardCornerRadius="20dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardBackgroundColor="@color/lavender"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Practicals"
-                android:textSize="20dp"
-                android:textStyle="bold">
-            </TextView>
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tutorial"/>
 
-        </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Practicals"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/iv2"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
 
-    </androidx.cardview.widget.CardView>
+            </RelativeLayout>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv3"
-        android:layout_width="360dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        app:cardElevation="11dp"
-        app:cardCornerRadius="20dp">
+        </androidx.cardview.widget.CardView>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardBackgroundColor="@color/lavender"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Assignment"
-                android:textSize="20dp"
-                android:textStyle="bold">
-            </TextView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tutorial"/>
 
-    </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv4"
-        android:layout_width="360dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        app:cardElevation="11dp"
-        app:cardCornerRadius="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assignment"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/iv3"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold">
+                </TextView>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+            </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Examples"
-                android:textSize="20dp"
-                android:textStyle="bold">
-            </TextView>
+        </androidx.cardview.widget.CardView>
 
-        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv4"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardBackgroundColor="@color/lavender"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp">
 
-    </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv5"
-        android:layout_width="360dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        app:cardElevation="11dp"
-        app:cardCornerRadius="20dp">
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tutorial"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Example"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/iv4"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Examples"
-                android:textSize="20dp"
-                android:textStyle="bold">
-            </TextView>
+            </RelativeLayout>
 
-        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
 
-    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv5"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardBackgroundColor="@color/lavender"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv6"
-        android:layout_width="360dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        app:cardElevation="11dp"
-        app:cardCornerRadius="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tutorial"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Share"
-                android:textSize="20dp"
-                android:textStyle="bold">
-            </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quiz"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/iv5"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+                </TextView>
 
-        </RelativeLayout>
+            </RelativeLayout>
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv6"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardBackgroundColor="@color/lavender"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp">
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+                <ImageView
+                    android:id="@+id/iv6"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tutorial"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/iv6"
+                    android:layout_marginStart="57dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
 </RelativeLayout>
