@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,199 +7,230 @@
     android:layout_height="match_parent"
     tools:context=".architecture">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/tv1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:text="@string/architecture_tv1"
-            android:textSize="30sp"
-            android:textStyle="bold"/>
+        android:layout_height="70dp"
+        android:background="@drawable/header">
 
         <ImageView
-            android:id="@+id/iv"
-            android:layout_width="500dp"
-            android:layout_height="300dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            app:srcCompat="@drawable/architecture"
-            android:layout_below="@id/tv1"/>
+            android:id="@id/iv1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/back"/>
 
         <TextView
-            android:id="@+id/tv2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:text="@string/architecture_tv2"
-            android:textSize="20sp"
-            android:layout_below="@id/iv"
-            android:textStyle="bold"/>
+            android:layout_height="match_parent"
+            android:text="Architecture"
+            android:layout_marginStart="65dp"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv2"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:justificationMode="inter_word"
-            android:lineSpacingExtra="5sp"
-            android:text="@string/architecture_tv3"
-            android:textSize="15sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
 
-        <TextView
-            android:id="@+id/tv4"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:text="@string/architecture_tv4"
-            android:textSize="20sp"
-            android:layout_below="@id/tv3"
-            android:textStyle="bold"/>
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tv5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv4"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:justificationMode="inter_word"
-            android:lineSpacingExtra="5sp"
-            android:text="@string/architecture_tv5"
-            android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/architecture_tv1"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/tv6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv5"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:justificationMode="inter_word"
-            android:lineSpacingExtra="5sp"
-            android:text="@string/architecture_tv6"
-            android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="500dp"
+                android:layout_height="300dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/architecture"
+                android:layout_below="@id/tv1"/>
 
-        <TextView
-            android:id="@+id/tv7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:text="@string/architecture_tv7"
-            android:textSize="20sp"
-            android:layout_below="@id/tv6"
-            android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/architecture_tv2"
+                android:textSize="20sp"
+                android:layout_below="@id/iv"
+                android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/tv8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv7"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:justificationMode="inter_word"
-            android:lineSpacingExtra="5sp"
-            android:text="@string/architecture_tv8"
-            android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/architecture_tv3"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/tv9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:text="@string/architecture_tv9"
-            android:textSize="20sp"
-            android:layout_below="@id/tv8"
-            android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/architecture_tv4"
+                android:textSize="20sp"
+                android:layout_below="@id/tv3"
+                android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/tv10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv9"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:justificationMode="inter_word"
-            android:lineSpacingExtra="5sp"
-            android:text="@string/architecture_tv10"
-            android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv4"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/architecture_tv5"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/tv11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:text="@string/architecture_tv11"
-            android:textSize="20sp"
-            android:layout_below="@id/tv10"
-            android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv5"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/architecture_tv6"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/tv12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv11"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:justificationMode="inter_word"
-            android:lineSpacingExtra="5sp"
-            android:text="@string/architecture_tv12"
-            android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/architecture_tv7"
+                android:textSize="20sp"
+                android:layout_below="@id/tv6"
+                android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/tv13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv12"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:justificationMode="inter_word"
-            android:lineSpacingExtra="5sp"
-            android:text="@string/architecture_tv13"
-            android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv7"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/architecture_tv8"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/tv14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
-            android:text="@string/architecture_tv14"
-            android:textSize="20sp"
-            android:layout_below="@id/tv13"
-            android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/architecture_tv9"
+                android:textSize="20sp"
+                android:layout_below="@id/tv8"
+                android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/tv15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv14"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="20dp"
-            android:justificationMode="inter_word"
-            android:lineSpacingExtra="5sp"
-            android:text="@string/architecture_tv15"
-            android:textSize="15sp" />
-    </RelativeLayout>
-</ScrollView>
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv9"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/architecture_tv10"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/architecture_tv11"
+                android:textSize="20sp"
+                android:layout_below="@id/tv10"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv11"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/architecture_tv12"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv12"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/architecture_tv13"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/architecture_tv14"
+                android:textSize="20sp"
+                android:layout_below="@id/tv13"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv14"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/architecture_tv15"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

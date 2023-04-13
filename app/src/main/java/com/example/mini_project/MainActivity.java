@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         card4.setOnClickListener(this);
         card5.setOnClickListener(this);
         card6.setOnClickListener(this);
-
     }
 
     @Override

@@ -6,10 +6,12 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 public class topics extends AppCompatActivity implements View.OnClickListener{
 
     public CardView card1, card2, card3, card4, card5, card6, card7, card8;
+    public ImageView iv1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,10 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
         card6 = (CardView) findViewById(R.id.tp6);
         card7 = (CardView) findViewById(R.id.tp7);
         card8 = (CardView) findViewById(R.id.tp8);
+
+        iv1 = (ImageView) findViewById(R.id.iv1);
+
+        iv1.setOnClickListener(this);
 
         card1.setOnClickListener(this);
         card2.setOnClickListener(this);
@@ -55,6 +61,9 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
                 startActivity(i);
                 break;
         }
+
+        i = new Intent(this, MainActivity.class);
+        startActivity(i);
 
     }
 }
