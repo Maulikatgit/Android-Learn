@@ -8,13 +8,13 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="70dp"
         android:background="@drawable/header">
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="10dp"
             android:src="@drawable/menubar"/>
@@ -31,10 +31,10 @@
             android:textColor="@color/white"/>
 
         <ImageView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="55dp"
+            android:layout_marginStart="50dp"
             android:src="@drawable/user"/>
 
     </LinearLayout>
@@ -49,13 +49,13 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv1"
-            android:layout_width="170dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="11dp"
             app:cardBackgroundColor="@color/lavender"
             android:layout_marginTop="15dp"
-            android:layout_marginStart="25dp">
+            android:layout_marginStart="20dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tutorials"
-                    android:layout_marginStart="45dp"
+                    android:layout_marginStart="42dp"
                     android:layout_marginTop="5dp"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -86,13 +86,14 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv2"
-            android:layout_width="170dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="11dp"
             app:cardBackgroundColor="@color/lavender"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp">
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -109,7 +110,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Practicals"
-                    android:layout_marginStart="43dp"
+                    android:layout_marginStart="41dp"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/white"
                     android:layout_below="@id/iv2"
@@ -123,13 +124,13 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv3"
-            android:layout_width="170dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="11dp"
             app:cardBackgroundColor="@color/lavender"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="25dp">
+            android:layout_marginStart="20dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -146,10 +147,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Assignment"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textColor="@color/white"
                     android:layout_below="@id/iv3"
-                    android:layout_marginStart="35dp"
+                    android:layout_marginStart="30dp"
                     android:layout_marginTop="5dp"
                     android:textStyle="bold">
                 </TextView>
@@ -160,8 +161,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv4"
-            android:layout_width="170dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="11dp"
             app:cardBackgroundColor="@color/lavender"
@@ -185,7 +186,7 @@
                     android:text="Example"
                     android:textColor="@color/white"
                     android:layout_below="@id/iv4"
-                    android:layout_marginStart="46dp"
+                    android:layout_marginStart="45dp"
                     android:layout_marginTop="5dp"
                     android:textSize="20sp"
                     android:textStyle="bold">
@@ -197,13 +198,13 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv5"
-            android:layout_width="170dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="11dp"
             app:cardBackgroundColor="@color/lavender"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="25dp">
+            android:layout_marginStart="20dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -222,7 +223,7 @@
                     android:text="Quiz"
                     android:textColor="@color/white"
                     android:layout_below="@id/iv5"
-                    android:layout_marginStart="60dp"
+                    android:layout_marginStart="50dp"
                     android:layout_marginTop="5dp"
                     android:textSize="20dp"
                     android:textStyle="bold">
@@ -234,8 +235,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv6"
-            android:layout_width="170dp"
-            android:layout_height="160dp"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="11dp"
             app:cardBackgroundColor="@color/lavender"
@@ -259,7 +260,7 @@
                     android:text="Share"
                     android:textColor="@color/white"
                     android:layout_below="@id/iv6"
-                    android:layout_marginStart="57dp"
+                    android:layout_marginStart="54dp"
                     android:layout_marginTop="5dp"
                     android:textSize="20sp"
                     android:textStyle="bold">
