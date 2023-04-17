@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class manifestFile extends AppCompatActivity implements View.OnClickListener{
+public class Activity extends AppCompatActivity implements View.OnClickListener{
 
     public ImageView iv1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_manifest_file);
+        setContentView(R.layout.activity);
 
         iv1 = (ImageView) findViewById(R.id.iv1);
 

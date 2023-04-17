@@ -78,4 +78,20 @@
     <string name="manifest_tv6">3. Permission : You need to define a permission in the android application manifest file before restricting access to any application component. Use the permission tag to create the permission definitions. The application components can then require them by adding the android:permission attribute. Other apps will then need to include a uses-permission tag in their manifest file and have it granted before they can use these protected components.\n\n Within the permission tag you can specify the level of access the permission will permit( normal, dangerous, signature, signatureOrSystem), a label, and an external resource containing the description that explains the risks of granting this permission.</string>
     <string name="manifest_tv7">4. Instrumentation :  Instrumentation classes provide a framework for running tests on your Activities and Services at run time. They simply provide hooks to monitor your application and its interaction with the system resources. You must create a new node for each of the test classes you have created in your application.</string>
 
+    <string name="activity_tv1">Android Activities</string>
+    <string name="activity_tv2">One of the core building block of Android app development is an Activity. It is represents a single screen with user interface(UI). ContextThemeWrapper is the super class of an activity. Activity is the main entry point of an Android app just like main method of a program written in Java or C++. An activity interacts with user so it creates a window to place UI elements. An Android application can contain several activities means many different screens represents that can interact with each other and independently with the user.</string>
+    <string name="activity_tv3">Android Activity Lifecycle</string>
+    <string name="activity_tv4">Android activity has its own life cycle during its life it can perform many operations. Android activities are stored and managed in a stack called activity stack. New activity comes at the top of stack and becomes running, while previous remains below to the new activity in stack. When the top activity in the stack exits, the lower to the top becomes active.</string>
+    <string name="activity_tv5">States of Android activity</string>
+    <string name="activity_tv6">Running : An activity is in running state when an acitivity at the top of the stack is in running or active state means it is at the foreground of the screen.\n\n Paused : An activity is paused state when an activity is alive but it is not focused in the paused state. (This is as a pop-up message shown on the activity).\n\n Resumed : An activity is resumed state When a paused activity becomes active it is refreshed and started again.\n\n Stopped : An activity is stopped state when an activity is no longer visible on the screen to the user is in the stopped state.</string>
+    <string name="activity_tv7">Android activity call back methods</string>
+    <string name="activity_tv8">An activity implements following call back methods :\n\n     OnCreate(): This is first call back method of an android activity. It is called when an activity is created. This is where all you set all stuffs like Button, Views, Checkbox, TextView etc.\n\n     OnStart() — It is second call back nethod. It is called when the activity is visible on the screen to the user.\n\n     OnResume() — This is called after OnStart() method if the activity comes to foreground. This is when user starts interacting with the activity.\n\n     OnPause() — This is followed by OnResume(). This method is called when a previous activity is resumed.\n\n     OnStop() — It is called when another activity is resumed then this activity is no longer visible to user. It becomes hidden.\n\n     OnDestroy() — This is the final call back method when the activity is finished.\n\n     OnRestart()?—?It is called when an activity restarts.</string>
+
 </resources>
+
+
+
+
+
+
+
