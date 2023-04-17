@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity">
+    tools:context=".fragment">
 
   <LinearLayout
       android:layout_width="match_parent"
@@ -23,8 +23,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Activities"
-        android:layout_marginStart="70dp"
+        android:text="Fragment"
+        android:layout_marginStart="80dp"
         android:gravity="center_vertical"
         android:fontFamily="sans-serif-medium"
         android:textSize="30sp"
@@ -46,7 +46,7 @@
           android:layout_height="wrap_content"
           android:layout_marginTop="10dp"
           android:layout_marginStart="10dp"
-          android:text="@string/activity_tv1"
+          android:text="@string/fragment_tv1"
           android:textSize="30sp"
           android:textStyle="bold"/>
 
@@ -56,25 +56,35 @@
           android:layout_height="wrap_content"
           android:layout_below="@id/tv1"
           android:layout_marginStart="10dp"
-          android:layout_marginLeft="10dp"
           android:layout_marginTop="10dp"
           android:layout_marginEnd="10dp"
-          android:layout_marginRight="10dp"
           android:justificationMode="inter_word"
           android:lineSpacingExtra="5sp"
-          android:text="@string/activity_tv2"
+          android:text="@string/fragment_tv2"
           android:textSize="15sp" />
+
+      <ImageView
+          android:id="@+id/iv2"
+          android:layout_width="500dp"
+          android:layout_height="300dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          app:srcCompat="@drawable/fragment"
+          android:layout_below="@id/tv2"/>
 
       <TextView
           android:id="@+id/tv3"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:layout_below="@id/iv2"
           android:layout_marginStart="10dp"
           android:layout_marginTop="10dp"
-          android:text="@string/activity_tv3"
-          android:textSize="20sp"
-          android:textStyle="bold"
-          android:layout_below="@+id/tv2"/>
+          android:layout_marginEnd="10dp"
+          android:justificationMode="inter_word"
+          android:lineSpacingExtra="5sp"
+          android:text="@string/fragment_tv3"
+          android:textSize="15sp" />
 
       <TextView
           android:id="@+id/tv4"
@@ -82,13 +92,11 @@
           android:layout_height="wrap_content"
           android:layout_below="@id/tv3"
           android:layout_marginStart="10dp"
-          android:layout_marginLeft="10dp"
           android:layout_marginTop="10dp"
           android:layout_marginEnd="10dp"
-          android:layout_marginRight="10dp"
           android:justificationMode="inter_word"
           android:lineSpacingExtra="5sp"
-          android:text="@string/activity_tv4"
+          android:text="@string/fragment_tv4"
           android:textSize="15sp" />
 
       <TextView
@@ -97,63 +105,72 @@
           android:layout_height="wrap_content"
           android:layout_marginStart="10dp"
           android:layout_marginTop="10dp"
-          android:text="@string/activity_tv5"
+          android:text="@string/fragment_tv5"
           android:textSize="20sp"
           android:textStyle="bold"
           android:layout_below="@+id/tv4"/>
 
       <TextView
-          android:id="@+id/tv6"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_below="@id/tv5"
-          android:layout_marginStart="10dp"
-          android:layout_marginLeft="10dp"
-          android:layout_marginTop="10dp"
-          android:layout_marginEnd="10dp"
+        android:id="@+id/tv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv5"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/fragment_tv6"
+        android:textSize="15sp" />
+
+      <ImageView
+          android:id="@+id/iv3"
+          android:layout_width="500dp"
+          android:layout_height="300dp"
           android:layout_marginRight="10dp"
-          android:justificationMode="inter_word"
-          android:lineSpacingExtra="5sp"
-          android:text="@string/activity_tv6"
-          android:textSize="15sp" />
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          app:srcCompat="@drawable/fragmentlifecycle"
+          android:layout_below="@id/tv6"/>
 
       <TextView
           android:id="@+id/tv7"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:layout_below="@id/iv3"
           android:layout_marginStart="10dp"
           android:layout_marginTop="10dp"
-          android:text="@string/activity_tv7"
-          android:textSize="20sp"
-          android:textStyle="bold"
-          android:layout_below="@+id/tv6"/>
+          android:layout_marginEnd="10dp"
+          android:justificationMode="inter_word"
+          android:lineSpacingExtra="5sp"
+          android:text="@string/fragment_tv7"
+          android:textSize="15sp" />
 
       <TextView
           android:id="@+id/tv8"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:layout_below="@id/tv7"
           android:layout_marginStart="10dp"
-          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+          android:text="@string/fragment_tv8"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          android:layout_below="@+id/tv7"/>
+
+      <TextView
+          android:id="@+id/tv9"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv8"
+          android:layout_marginStart="10dp"
           android:layout_marginTop="10dp"
           android:layout_marginEnd="10dp"
-          android:layout_marginRight="10dp"
           android:justificationMode="inter_word"
           android:lineSpacingExtra="5sp"
-          android:text="@string/activity_tv8"
+          android:text="@string/fragment_tv9"
           android:textSize="15sp" />
-
-      <ImageView
-          android:id="@+id/iv"
-          android:layout_width="500dp"
-          android:layout_height="500dp"
-          android:layout_marginRight="10dp"
-          android:layout_marginTop="10dp"
-          android:layout_marginLeft="10dp"
-          app:srcCompat="@drawable/lifecycle"
-          android:layout_below="@id/tv8"/>
 
     </RelativeLayout>
   </ScrollView>
 
-  </RelativeLayout>
+</RelativeLayout>

@@ -11,11 +11,17 @@
         android:theme="@style/Theme.Mini_Project"
         tools:targetApi="31" >
         <activity
+            android:name=".fragment"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".Activity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".manifestFile"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".component"
             android:exported="false"
