@@ -86,13 +86,13 @@
                             android:text="@string/topics_tv1"
                             android:textAlignment="center"
                             android:textSize="18sp"
-                            android:textStyle="bold"></TextView>
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -137,7 +137,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -181,7 +181,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
                 </androidx.cardview.widget.CardView>
@@ -225,7 +225,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -268,7 +268,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -312,7 +312,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -347,7 +347,7 @@
                             android:layout_gravity="center_horizontal"
                             android:textAlignment="center"
                             android:text="@string/topics_tv7"
-                            android:textSize="18dp"
+                            android:textSize="18sp"
                             android:textStyle="bold">
                         </TextView>
                     </LinearLayout>
@@ -355,7 +355,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginStart="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -399,7 +399,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -442,7 +442,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -486,7 +486,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -530,7 +530,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -574,7 +574,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -618,7 +618,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -662,7 +662,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -706,7 +706,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -750,7 +750,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -789,14 +789,14 @@
                             android:text="@string/topics_tv17"
                             android:textAlignment="center"
                             android:textSize="18dp"
-                            android:textStyle="bold"></TextView>
+                            android:textStyle="bold"/>
 
                     </LinearLayout>
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -840,7 +840,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="300dp"
+                        android:layout_marginLeft="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
