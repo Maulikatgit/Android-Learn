@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class topics extends AppCompatActivity implements View.OnClickListener{
 
-    public CardView card1, card2, card3, card4, card5, card6, card7, card8;
+    public CardView card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12, card13, card14, card15, card16, card17, card18;
     public ImageView iv1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,16 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
         card6 = (CardView) findViewById(R.id.tp6);
         card7 = (CardView) findViewById(R.id.tp7);
         card8 = (CardView) findViewById(R.id.tp8);
+        card9 = (CardView) findViewById(R.id.tp9);
+        card10 = (CardView) findViewById(R.id.tp10);
+        card11 = (CardView) findViewById(R.id.tp11);
+        card12 = (CardView) findViewById(R.id.tp12);
+        card13 = (CardView) findViewById(R.id.tp13);
+        card14 = (CardView) findViewById(R.id.tp14);
+        card15 = (CardView) findViewById(R.id.tp15);
+        card16 = (CardView) findViewById(R.id.tp16);
+        card17 = (CardView) findViewById(R.id.tp17);
+        card18 = (CardView) findViewById(R.id.tp18);
 
         iv1 = (ImageView) findViewById(R.id.iv1);
 
@@ -38,6 +48,16 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
         card6.setOnClickListener(this);
         card7.setOnClickListener(this);
         card8.setOnClickListener(this);
+        card9.setOnClickListener(this);
+        card10.setOnClickListener(this);
+        card11.setOnClickListener(this);
+        card12.setOnClickListener(this);
+        card13.setOnClickListener(this);
+        card14.setOnClickListener(this);
+        card15.setOnClickListener(this);
+        card16.setOnClickListener(this);
+        card17.setOnClickListener(this);
+        card18.setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +67,15 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
         switch (view.getId()){
             case R.id.tp1:
             case R.id.tp8:
+            case R.id.tp9:
+            case R.id.tp10:
+            case R.id.tp12:
+            case R.id.tp13:
+            case R.id.tp14:
+            case R.id.tp15:
+            case R.id.tp16:
+            case R.id.tp17:
+            case R.id.tp18:
                 i = new Intent(this, introduction.class);
                 startActivity(i);
                 break;
@@ -78,6 +107,11 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
 
             case R.id.tp7:
                 i = new Intent(this, fragment.class);
+                startActivity(i);
+                break;
+
+            case R.id.tp11:
+                i = new Intent(this, UIlayout.class);
                 startActivity(i);
                 break;
 
