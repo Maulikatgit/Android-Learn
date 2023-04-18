@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello, Maulik!"
+            android:text="Hello, Saket!"
             android:layout_marginStart="75dp"
             android:fontFamily="sans-serif-medium"
             android:layout_marginTop="16dp"
@@ -34,7 +34,7 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="30dp"
             android:src="@drawable/user"/>
 
     </LinearLayout>
