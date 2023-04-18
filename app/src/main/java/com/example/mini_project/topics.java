@@ -46,9 +46,6 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
 
         switch (view.getId()){
             case R.id.tp1:
-            case R.id.tp5:
-            case R.id.tp6:
-            case R.id.tp7:
             case R.id.tp8:
                 i = new Intent(this, introduction.class);
                 startActivity(i);
@@ -68,6 +65,22 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
                 i = new Intent(this, component.class);
                 startActivity(i);
                 break;
+
+            case R.id.tp5:
+                i = new Intent(this, manifestFile.class);
+                startActivity(i);
+                break;
+
+            case R.id.tp6:
+                i = new Intent(this, Activity.class);
+                startActivity(i);
+                break;
+
+            case R.id.tp7:
+                i = new Intent(this, fragment.class);
+                startActivity(i);
+                break;
+
         }
 
         if (view.getId() == R.id.iv1) {
