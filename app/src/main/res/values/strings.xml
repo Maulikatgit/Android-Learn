@@ -174,7 +174,7 @@ And it is very easy to understand.</string>
     <string name="broadcast_receiver_tv7">2. Ordered Broadcasts </string>
     <string name="broadcast_receiver_tv8">      At a time only one broadcast is delivered to one receiver.\n        Receivers can use the result. In fact as each receiver executes, result is passed to next receiver.\n       Receiver can also abort the broadcast and hence no broadcast is received by other receivers.\n      These are synchronous broadcasts.\n         The order of receivers is managed and controlled by the attribute android:priority in corresponding intent-filter. \n       If the receivers will have same priority then they may run in any order. </string>
     <string name="broadcast_receiver_tv9">Benefits of Broadcast Receiver</string>
-    <string name="broadcast_receiver_tv10">Broadcast Receiver do not have UI but can start an Activity.\n     A Broadcast receiver wakes your application up, the inline code works only when your application is running.\n      Broadcast Receiver has maximum limit of 10secs, don't do any asynchronous operations which may take more time, don't do heavy database operations or networking operations in broadcast receiver.</string>
+    <string name="broadcast_receiver_tv10">Broadcast Receiver do not have UI but can start an Activity.\n      A Broadcast receiver wakes your application up, the inline code works only when your application is running.\n      Broadcast Receiver has maximum limit of 10secs, don't do any asynchronous operations which may take more time, don't do heavy database operations or networking operations in broadcast receiver.</string>
 
 
 

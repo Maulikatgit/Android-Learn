@@ -182,7 +182,7 @@
                 android:justificationMode="inter_word"
                 android:lineSpacingExtra="5sp"
                 android:text="@string/androidmenu_tv12"
-                android:textSize="15sp" />
+                android:textSize="15sp"  />
 
 
         </RelativeLayout>
