@@ -152,4 +152,18 @@ And it is very easy to understand.</string>
     <string name="intent_tv9">Syntax: intent-filter</string>
 
 
+    <string name="androidmenu_tv1">Android Menu</string>
+    <string name="androidmenu_tv2">In android it provides an easy, flexible and common user interface(UI) component known as menu, which is used to handle a set of actions. Menu is a set of options, the user can select to perform an action . Android menu provide a familiar and consistent user experience ain entire the application. Based upon the menu item clicked, a certain action can be performed by the application such as add, search, delete, update, edit, or refresh etc. Android menu comes from Android 3.0 (API level 11).\n\n There are 3 types of menus in android: \n\n      1.Option Menu \n      2.Context Menu \n      3.Popup Menu</string>
+    <string name="androidmenu_tv3">1. Option Menu:</string>
+    <string name="androidmenu_tv4">Android option menu is the primary collection of menu items for an activity. It is the place where we implement the actions that have a global impact on the app, such as Add,Search, , Modify, Settings and Delete. Option menu appears in the app bar and provides the primary options to the user.</string>
+    <string name="androidmenu_tv5">2. Context Menu:</string>
+    <string name="androidmenu_tv6">Context menu provides a set of menu options when user perform long click on an element on a screen of the application. Most often context menu is used for items in ListView, GridView, RecyclerView or other view collections in which the user can perform direct actions on each item.\n\n Android provides two different way of context menu :- \n       Floating Menu \n        Contextual action mode or Contextual action bar</string>
+    <string name="androidmenu_tv7"> Floating Menu:</string>
+    <string name="androidmenu_tv8">A floating menu is menu that appears when the user performs a long-click on an element. It provides the actions that affect the selected content or a view element on the screen. It provides a floating list of menu items when the user performs a long tap on an item.</string>
+    <string name="androidmenu_tv9"> Contextual Action Bar:</string>
+    <string name="androidmenu_tv10">A contextual action bar appears at the top of the screen in place of the app bar or underneath the app bar, with action items that affect the selected view element(s) in android application. When a user enables this mode by selecting an item, a contextual action bar appears at the top of the screen to present actions the user can perform on the currently selected item(s).</string>
+    <string name="androidmenu_tv11">3. PopUp Menu:</string>
+    <string name="androidmenu_tv12">A popup menu displays a list of items in a vertical list that’s anchored(sticked) to the view that invoked the menu. Popup menu provides an overflow-style menu for actions that relate to specific content (such as Gmail’s email headers) or to provide options for a second part of a command.</string>
+
+
 </resources>
