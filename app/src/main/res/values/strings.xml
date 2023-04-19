@@ -165,5 +165,19 @@ And it is very easy to understand.</string>
     <string name="androidmenu_tv11">3. PopUp Menu:</string>
     <string name="androidmenu_tv12">A popup menu displays a list of items in a vertical list that’s anchored(sticked) to the view that invoked the menu. Popup menu provides an overflow-style menu for actions that relate to specific content (such as Gmail’s email headers) or to provide options for a second part of a command.</string>
 
+    <string name="broadcast_receiver_tv1">Broadcast Receivers</string>
+    <string name="broadcast_receiver_tv2">Broadcast Receivers is a component which allows a system to deliver events to the app like listening for Incoming call, sms, sending a low battery message to the app etc. The apps can also initiate broadcasts to let other apps know that required data available in a device to use it.It is used to handle communication between Android operating system and applications.\n\n  Generally, we use Intents to deliver broadcast events to other applications and Broadcast Receivers use status bar notifications to let user know that broadcast event occurs.</string>
+    <string name="broadcast_receiver_tv3">Types of Broadcast Receivers</string>
+    <string name="broadcast_receiver_tv4">There are two types of broadcasts received by receivers and they are:</string>
+    <string name="broadcast_receiver_tv5">1. Normal Broadcasts </string>
+    <string name="broadcast_receiver_tv6">      It is efficient.\n      Receivers cannot use the result.\n       They can not abort the included APIs.\n       These are asynchronous broadcasts.\n       Receivers of this type of broadcasts may run in any order, sometimes altogether.\n      These broadcasts are sent with Context.sendBroadcast.</string>
+    <string name="broadcast_receiver_tv7">2. Ordered Broadcasts </string>
+    <string name="broadcast_receiver_tv8">      At a time only one broadcast is delivered to one receiver.\n        Receivers can use the result. In fact as each receiver executes, result is passed to next receiver.\n       Receiver can also abort the broadcast and hence no broadcast is received by other receivers.\n      These are synchronous broadcasts.\n         The order of receivers is managed and controlled by the attribute android:priority in corresponding intent-filter. \n       If the receivers will have same priority then they may run in any order. </string>
+    <string name="broadcast_receiver_tv9">Benefits of Broadcast Receiver</string>
+    <string name="broadcast_receiver_tv10">Broadcast Receiver do not have UI but can start an Activity.\n     A Broadcast receiver wakes your application up, the inline code works only when your application is running.\n      Broadcast Receiver has maximum limit of 10secs, don't do any asynchronous operations which may take more time, don't do heavy database operations or networking operations in broadcast receiver.</string>
+
+
+
+
 
 </resources>
