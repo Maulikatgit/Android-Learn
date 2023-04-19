@@ -63,10 +63,10 @@
 
                 <ImageView
                     android:id="@+id/iv1"
-                    android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/tutorial"/>
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tutorial" />
 
                 <TextView
                     android:layout_width="wrap_content"
