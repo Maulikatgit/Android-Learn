@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Broadcast_receivers extends AppCompatActivity implements View.OnClickListener{
+public class services extends AppCompatActivity implements View.OnClickListener{
 
     public ImageView iv1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_broadcast_receivers);
+        setContentView(R.layout.activity_services);
 
         iv1 = (ImageView) findViewById(R.id.iv1);
 

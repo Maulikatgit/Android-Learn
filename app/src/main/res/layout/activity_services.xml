@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".services">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/header">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Services"
+            android:layout_marginStart="100dp"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/services_tv1"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv1"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv2"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="55dp"
+                android:src="@drawable/service_img1"
+                android:layout_below="@id/tv2"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv2"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv3"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/services_tv4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv3"/>
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv4"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv5"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/services_tv6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv5"/>
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv6"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv7"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/services_tv8"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv7"/>
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv8"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv9"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/services_tv10"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv9"/>
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv10"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv11"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/services_lifecycle"
+                android:layout_below="@id/tv11"/>
+
+            <TextView
+                android:id="@+id/tv12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv3"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv12"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/services_tv13"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv12"/>
+
+            <TextView
+                android:id="@+id/tv14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv13"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv14"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/services_tv15"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv14"/>
+
+            <TextView
+                android:id="@+id/tv16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv15"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv16"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="391dp"
+                android:layout_height="342dp"
+                android:layout_below="@+id/tv16"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-4dp"
+                android:src="@drawable/service_img2" />
+
+            <TextView
+                android:id="@+id/tv17"
+                android:layout_width="500dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/services_tv17"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/iv4"/>
+
+            <TextView
+                android:id="@+id/tv18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv17"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv18"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/services_tv19"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv18"/>
+
+            <TextView
+                android:id="@+id/tv20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv19"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/services_tv20"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/services_tv21"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv20"/>
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv21"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingExtra="5sp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/services_tv22"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
