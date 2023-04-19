@@ -28,5 +28,6 @@ public class fragment extends AppCompatActivity implements View.OnClickListener 
 
         i = new Intent(this, MainActivity.class);
         startActivity(i);
+
     }
 }
