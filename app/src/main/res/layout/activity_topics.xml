@@ -17,7 +17,7 @@
            android:id="@+id/iv1"
            android:layout_width="50dp"
            android:layout_height="50dp"
-           android:layout_gravity="center_vertical"
+           android:gravity="center_vertical"
            android:layout_marginStart="10dp"
            android:src="@drawable/back"/>
 
@@ -303,7 +303,7 @@
                             android:layout_gravity="center_horizontal"
                             android:textAlignment="center"
                             android:text="@string/topics_tv6"
-                            android:textSize="18dp"
+                            android:textSize="18sp"
                             android:textStyle="bold">
                         </TextView>
 
@@ -390,7 +390,7 @@
                             android:layout_gravity="center_horizontal"
                             android:textAlignment="center"
                             android:text="@string/topics_tv8"
-                            android:textSize="18dp"
+                            android:textSize="18sp"
                             android:textStyle="bold">
                         </TextView>
 
@@ -442,7 +442,7 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="250dp"
+                        android:layout_marginStart="250dp"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/forward" />
 
@@ -741,7 +741,7 @@
                             android:layout_gravity="center_horizontal"
                             android:textAlignment="center"
                             android:text="@string/topics_tv16"
-                            android:textSize="18dp"
+                            android:textSize="18sp"
                             android:textStyle="bold">
                         </TextView>
 
@@ -788,7 +788,7 @@
                             android:layout_gravity="center_horizontal"
                             android:text="@string/topics_tv17"
                             android:textAlignment="center"
-                            android:textSize="18dp"
+                            android:textSize="18sp"
                             android:textStyle="bold"/>
 
                     </LinearLayout>
@@ -831,7 +831,7 @@
                             android:layout_gravity="center_horizontal"
                             android:textAlignment="center"
                             android:text="@string/topics_tv18"
-                            android:textSize="18dp"
+                            android:textSize="18sp"
                             android:textStyle="bold">
                         </TextView>
 
