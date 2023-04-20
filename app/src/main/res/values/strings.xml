@@ -231,6 +231,32 @@ And it is very easy to understand.</string>
     <string name="provider_tv30">2.4 Query Content Provider Data</string>
     <string name="provider_tv31">query(Uri uri, String columnArray[], String whereClause, String wherePlaceHolderValue[], String orderByClause)\n\nThe query method return\na android.database.Cursor object, but if it is not null means its not empty, then use \nit’s moveToFirst() method to move to the first row.\n\nThen loop in the cursor to get each row use it’s moveToNext()method</string>
 
+    <string name="containers_tv1">Android Containers</string>
+    <string name="containers_tv2">Android Containers, as the name itself implies, hold objects and widgets together, depending on which specific items are needed and in what particular arrangement that is wanted. Containers may hold labels, fields, buttons or even child containers as examples it shows.\n</string>
+    <string name="containers_tv3">ListView\n</string>
+    <string name="containers_tv4">Android ListView is a type of view in which groups set of several items and display all the items in vertical scrollable list. The list items are automatically inserted to the list using an Adapter that pulls content from a source such as an array or database. It is one of the basic and most used user interface(UI) components of android. The most common usages include displaying data in the form of a vertical scrolling list. Example of listView are list of contacts list in your phone, list of recipes, list of biscuits etc\n</string>
+    <string name="containers_tv5">code snippet\n</string>
+    <string name="containers_tv6">code snippet\n</string>
+    <string name="containers_tv7">Adapter:</string>
+    <string name="containers_tv8">Adapter is used to fill the data in a ListView we simply use adapters. List items are automatically inserted to a list using an Adapter that pulls the content from a source such as an arraylist, array or database etc.\n</string>
+    <string name="containers_tv9">In android commonly used adapters are:</string>
+    <string name="containers_tv10">   1.Array Adapter\n   2.Base Adapter</string>
+    <string name="containers_tv11">1.Array Adapter:</string>
+    <string name="containers_tv12">Whenever you have a list of single items which is backed by an array, you can use ArrayAdapter. For instance, list of phone contacts, countries or names, recipes, biscuits etc.\n</string>
+    <string name="containers_tv13">2.Base Adapter: </string>
+    <string name="containers_tv14">BaseAdapter is a common base class of a general implementation of an Adapter that can be used in ListView. Whenever you need a customized list you create your own adapter and extend base adapter in that. Base Adapter can be extended to create a custom Adapter for displaying a custom list item.  ArrayAdapter is also an implementation of BaseAdapter.
+</string>
+    <string name="containers_tv15">Custom ListView</string>
+    <string name="containers_tv16">A custom ListView also uses Adapter classes which added the content from data source such as an aaray, string-array and database etc. Adapter bridges data between an AdapterViews and other Views.\n</string>
+    <string name="containers_tv17">Expandable ListView</string>
+    <string name="containers_tv18">Expandable ListView is a view that shows items of list in a vertically scrolling two level list. It differs from a ListView by allowing two levels which are groups that can be easily expanded and collapsed by touching to view and their respective children items. ExpandableListViewAdapter in android loads the data into the items associate with this view.\n</string>
+    <string name="containers_tv19">GridView</string>
+    <string name="containers_tv20">A GridView is a view group that display items in two dimensional scrolling grid in the form of rows and columns, the grid items are not necessarily predetermined but they are automatically inserted to the layout using a ListAdapter. And GridView is widely used in android apps.\n</string>
+    <string name="containers_tv21">WebView</string>
+    <string name="containers_tv22">WebView is a view used to display the web pages in android application. This class is the basis upon which you can roll your own web browser or simply use it to display some online content within your Activity. We can also specify HTML string and you can show it inside our android application using a WebView. Generally, WebView turns application into a web application.\n</string>
+    <string name="containers_tv23">SearchView</string>
+    <string name="containers_tv24">In Android, SearchView widget provide search user interface(UI) where users can enter a search query and then click on submit a request to search provider. It shows a list of query suggestions or results if available and allow the users to pick a suggestion or result\n</string>
 
+    <string name=""></string>
 
 </resources>
