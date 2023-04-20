@@ -257,6 +257,6 @@ And it is very easy to understand.</string>
     <string name="containers_tv23">SearchView</string>
     <string name="containers_tv24">In Android, SearchView widget provide search user interface(UI) where users can enter a search query and then click on submit a request to search provider. It shows a list of query suggestions or results if available and allow the users to pick a suggestion or result\n</string>
 
-    <string name=""></string>
+
 
 </resources>
