@@ -11,9 +11,6 @@
         android:theme="@style/Theme.Mini_Project"
         tools:targetApi="31">
         <activity
-            android:name=".content_provider"
-            android:exported="false" />
-        <activity
             android:name=".intent"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

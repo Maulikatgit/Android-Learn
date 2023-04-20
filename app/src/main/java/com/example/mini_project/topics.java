@@ -66,11 +66,8 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
 
         switch (view.getId()){
             case R.id.tp1:
-            case R.id.tp9:
             case R.id.tp10:
             case R.id.tp12:
-            case R.id.tp13:
-            case R.id.tp14:
             case R.id.tp15:
             case R.id.tp16:
             case R.id.tp17:
@@ -114,11 +111,25 @@ public class topics extends AppCompatActivity implements View.OnClickListener{
                 startActivity(i);
                 break;
 
+            case R.id.tp9:
+                i = new Intent(this, services.class);
+                startActivity(i);
+                break;
+
             case R.id.tp11:
                 i = new Intent(this, UIlayout.class);
                 startActivity(i);
                 break;
 
+            case R.id.tp13:
+                i = new Intent(this, AndroidMenu.class);
+                startActivity(i);
+                break;
+
+            case R.id.tp14:
+                i = new Intent(this, Broadcast_receivers.class);
+                startActivity(i);
+                break;
         }
 
         if (view.getId() == R.id.iv1) {
