@@ -15,6 +15,10 @@
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
+            android:name=".content_provider"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".fragment"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
