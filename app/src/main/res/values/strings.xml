@@ -257,6 +257,53 @@ And it is very easy to understand.</string>
     <string name="containers_tv23">SearchView</string>
     <string name="containers_tv24">In Android, SearchView widget provide search user interface(UI) where users can enter a search query and then click on submit a request to search provider. It shows a list of query suggestions or results if available and allow the users to pick a suggestion or result\n</string>
 
+    <string name="storage_tv0">Android Data Storage\n</string>
+    <string name="storage_tv1">Android provides several options for you to save persistent app data. The solution you choose depends on your specific needs, such as whether the data should be private to your application or accessible to other applications and how much space your data requires.\n\nThere are basically 5 different ways to store data in android app are the following:
+    </string>
+    <string name="storage_tv2">1. Shared Preferences</string>
+    <string name="storage_tv3">     It stores private primitive data in key-value pairs.</string>
+    <string name="storage_tv4">2. Internal Storage</string>
+    <string name="storage_tv5">     It stores private data on the device memory.</string>
+    <string name="storage_tv6">3. External Storage</string>
+    <string name="storage_tv7">     It stores public data on the shared external storage.</string>
+    <string name="storage_tv8">4. SQLite Databases</string>
+    <string name="storage_tv9">     It stores structured data in a private database.</string>
+    <string name="storage_tv10">5. Network Connection</string>
+    <string name="storage_tv11">    It stores data on the web with your own network server.\n</string>
+    <string name="storage_tv12">1. Shared Preferences\n</string>
+    <string name="storage_tv13">The SharedPreferences is a class that provides a general framework which allows you to save and retrieve persistent key-value pairs of primitive data types. You can use SharedPreferences to save any primitive data types: booleans, floats, ints, longs, and strings. This data will persist across user sessions (even if your android application is killed).\n</string>
+    <string name="storage_tv14">User Preferences</string>
+    <string name="storage_tv15">Shared preferences are not strictly for saving "user preferences", such as what ringtone a user has chosen. If you are interested in creating user preferences for your app see PreferenceActivity which provides an Activity framework for you to create user preferences, which will be automatically persisted.\n\nTo get a SharedPreferences object for your android application, use one of two methods:\n\n       getSharedPreferences() - Using this method if you need multiple preferences files identified by name, which you specify with the first parameter.\n\n       getPreferences() – Using this method if you need only one preferences file for your Activity in your application. Because this will be the only preferences file for your Activity, you don't supply a name.\n\nTo write values:\n\n   1.Call edit() to get a SharedPreferences.Editor.\n   2.Add values with methods such as  putBoolean() method and putString() method.\n   3.Commit the new values with commit().\n\nTo read values, use SharedPreferences() methods such as getBoolean() method and getString() method.\n</string>
+    <string name="storage_tv16">2. Internal Storage\n</string>
+    <string name="storage_tv17">In internal storage, you can save files directly on the device's internal storage. By default, all the files of your application saved to the internal storage are private to your application and other applications can't access them (nor can the user). When the user uninstalls your android application, these files are removed automatically from youe internal storage.\n\nTo create and write a private file to the internal storage:-\n\n      1.Call openFileOutput() with the name of the file and the operating mode. This returns a FileOutputStream.\n      2.Write to the file with write().\n      3.Close the stream with close().\n</string>
+    <string name="storage_tv18">Modes of Internal Storage\n\nMODE_PRIVATE —</string>
+    <string name="storage_tv19">In private mode, the data stored earlier is always overridden by the current data i.e every time you try to commit a new write to a file which removes or override the previous content.</string>
+    <string name="storage_tv20">MODE_APPEND —</string>
+    <string name="storage_tv21">In this mode, the data is append to the existing content i.e keep adding data.\n</string>
+    <string name="storage_tv22">3. External Storage\n</string>
+    <string name="storage_tv23">In android External storage such as SD card can also store application data, there is no security enforced upon files you save to the external storage.This can be a removable storage media (such as an SD card). Files saved to the external storage are world readable and can be modified by the user when they enable USB mass storage to transfer files on a computer.\n\nThere are two types of External Storage:</string>
+    <string name="storage_tv24">      Primary External Storage: </string>
+    <string name="storage_tv25">          In built shared storage which is accessible by the user by plugging in a USB cable and mounting it as a drive on a host computer. Example: When we can say Nexus 5 32 GB.</string>
+    <string name="storage_tv26">      Secondary External Storage: </string>
+    <string name="storage_tv27">          It is removable storage. Example: SD Card.\n</string>
+    <string name="storage_tv28">In Android Methods to Store Data:\n\n      getExternalStorageDirectory() – </string>
+    <string name="storage_tv29">It is older way to access external storage in API Level less than 7. It is absolute now and not recommended. It directly get the reference to the root directory of your external storage.</string>
+    <string name="storage_tv30">      getExternalFilesDir(String type) – </string>
+    <string name="storage_tv31">It is recommended way to enable us to create private files specific to android app and files are removed as android app is uninstalled. Example: app private data.</string>
+    <string name="storage_tv32">getExternalStoragePublicDirectory()- </string>
+    <string name="storage_tv33">This is current recommended way that enable us to keep files public and are not deleted with the android app uninstallation. Example: images clicked by the camera exists even we uninstall the camera app.\n</string>
+    <string name="storage_tv34">4. SQLite Databases\n</string>
+    <string name="storage_tv35">In android, SQLite is a Structure query base database, open source, light weight, no network access and standalone database. It supports embedded relational database features.Whenever an application needs to store large amount of data then using SQLite database is more preferable than other repository system like SharedPreferences or saving data in files.
 
+To create a new SQLite database is to create a subclass of SQLiteOpenHelper and override the onCreate() method, in which you can execute a SQLite command to create tables in the SQLite database.Then get an instance of your SQLiteOpenHelper implementation using the constructor you have defined. To write and to read from the database, call getWritableDatabase() and getReadableDatabase() respectively. These both return a SQLiteDatabase object that represents the database and provides methods for SQLite operations.
+
+We do recommend including an auto increment value key field that can be used as a unique ID to quickly find a record from the database. This is not required for private data, but if you implement a content provider, you must include a unique ID using the BaseColumns.ID constant.
+
+You can execute SQLite queries using the SQLiteDatabaseQuery() methods, which accept various query parameters, such as the table to query, the projection, selection, columns, grouping, and others. For complex queries, such as those that require column aliases, you should use SQLiteQueryBuilder, which provides several convienent methods for building queries.
+
+In SQLite every query will return a Cursor that points to all the rows found by the query. The Cursor is always the mechanism with which you can navigate results from a database query and read rows and columns.
+</string>
+    <string name="storage_tv36">5. Using a Network Connection</string>
+    <string name="storage_tv37">You can use the network (when it is available) to store and retrieve data on your own web-based services. To do network operations, use classes in the following packages:\n\n      java.net*\n      android.net*</string>
 
 </resources>
