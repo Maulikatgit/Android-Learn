@@ -148,6 +148,8 @@ public class quiz extends AppCompatActivity {
                                 SetNewQue();
                             }else {
                                 Intent i = new Intent(quiz.this, Success.class);
+                                i.putExtra("correct", correct);
+                                i.putExtra("wrong", wrong);
                                 startActivity(i);
                             }
 
@@ -183,6 +185,8 @@ public class quiz extends AppCompatActivity {
                                 SetNewQue();
                             }else {
                                 Intent i = new Intent(quiz.this, Success.class);
+                                i.putExtra("correct", correct);
+                                i.putExtra("wrong", wrong);
                                 startActivity(i);
                             }
 
@@ -223,6 +227,8 @@ public class quiz extends AppCompatActivity {
                                 SetNewQue();
                             }else {
                                 Intent i = new Intent(quiz.this, Success.class);
+                                i.putExtra("correct", correct);
+                                i.putExtra("wrong", wrong);
                                 startActivity(i);
                             }
 
@@ -259,6 +265,8 @@ public class quiz extends AppCompatActivity {
                                 SetNewQue();
                             }else {
                                 Intent i = new Intent(quiz.this, Success.class);
+                                i.putExtra("correct", correct);
+                                i.putExtra("wrong", wrong);
                                 startActivity(i);
                             }
 
@@ -298,6 +306,8 @@ public class quiz extends AppCompatActivity {
                                 SetNewQue();
                             }else {
                                 Intent i = new Intent(quiz.this, Success.class);
+                                i.putExtra("correct", correct);
+                                i.putExtra("wrong", wrong);
                                 startActivity(i);
                             }
 
@@ -334,6 +344,8 @@ public class quiz extends AppCompatActivity {
                                 SetNewQue();
                             }else {
                                 Intent i = new Intent(quiz.this, Success.class);
+                                i.putExtra("correct", correct);
+                                i.putExtra("wrong", wrong);
                                 startActivity(i);
                             }
 
@@ -373,6 +385,8 @@ public class quiz extends AppCompatActivity {
                                 SetNewQue();
                             }else {
                                 Intent i = new Intent(quiz.this, Success.class);
+                                i.putExtra("correct", correct);
+                                i.putExtra("wrong", wrong);
                                 startActivity(i);
                             }
 
@@ -409,6 +423,8 @@ public class quiz extends AppCompatActivity {
                                 SetNewQue();
                             }else {
                                 Intent i = new Intent(quiz.this, Success.class);
+                                i.putExtra("correct", correct);
+                                i.putExtra("wrong", wrong);
                                 startActivity(i);
                             }
 
