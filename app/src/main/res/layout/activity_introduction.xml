@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="end"
     tools:context=".introduction">
 
     <LinearLayout
@@ -57,7 +58,7 @@
                 android:layout_below="@id/tv1"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="28dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
                 android:justificationMode="inter_word"

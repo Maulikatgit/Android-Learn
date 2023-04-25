@@ -49,6 +49,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 i = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(Intent.createChooser(i, "Share Application"));
                 break;
+
+            case R.id.cv5:
+                i = new Intent(this, quiz.class);
+                startActivity(i);
+                break;
+
         }
     }
 }
