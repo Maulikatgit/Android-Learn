@@ -2,17 +2,13 @@ package com.example.mini_project;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -20,17 +16,15 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 
-public class pra1 extends AppCompatActivity implements View.OnClickListener {
+public class pra2 extends AppCompatActivity implements View.OnClickListener{
 
     public ImageView iv1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pra1);
+        setContentView(R.layout.activity_pra2);
 
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv1.setOnClickListener(this);
