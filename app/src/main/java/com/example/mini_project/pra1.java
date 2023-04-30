@@ -2,17 +2,13 @@ package com.example.mini_project;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -20,8 +16,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
 
 public class pra1 extends AppCompatActivity implements View.OnClickListener {
 
@@ -35,7 +29,7 @@ public class pra1 extends AppCompatActivity implements View.OnClickListener {
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv1.setOnClickListener(this);
 
-        String codeSnippet = readFileFromAssets("pra1.java");
+        String codeSnippet = readFileFromAssets("pra1.xml");
         TextView codeSnippetTextView = findViewById(R.id.code_snippet);
         codeSnippetTextView.setText(codeSnippet);
 
@@ -48,12 +42,12 @@ public class pra1 extends AppCompatActivity implements View.OnClickListener {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.menu_home:
-                        String codeSnippet = readFileFromAssets("pra1.java");
+                        String codeSnippet = readFileFromAssets("pra1.xml");
                         TextView codeSnippetTextView = findViewById(R.id.code_snippet);
                         codeSnippetTextView.setText(codeSnippet);
                         return true;
                     case R.id.menu_search:
-                        String codeSnippet1 = readFileFromAssets("pra2.java");
+                        String codeSnippet1 = readFileFromAssets("pra1.java");
                         TextView codeSnippetTextView1 = findViewById(R.id.code_snippet);
                         codeSnippetTextView1.setText(codeSnippet1);
                         return true;

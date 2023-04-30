@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class pra2 extends AppCompatActivity implements View.OnClickListener{
+public class pra9 extends AppCompatActivity implements View.OnClickListener {
 
     public ImageView iv1;
 
@@ -29,7 +29,7 @@ public class pra2 extends AppCompatActivity implements View.OnClickListener{
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv1.setOnClickListener(this);
 
-        String codeSnippet = readFileFromAssets("pra2.xml");
+        String codeSnippet = readFileFromAssets("pra9.xml");
         TextView codeSnippetTextView = findViewById(R.id.code_snippet);
         codeSnippetTextView.setText(codeSnippet);
 
@@ -42,12 +42,12 @@ public class pra2 extends AppCompatActivity implements View.OnClickListener{
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.menu_home:
-                        String codeSnippet = readFileFromAssets("pra2.xml");
+                        String codeSnippet = readFileFromAssets("pra9.xml");
                         TextView codeSnippetTextView = findViewById(R.id.code_snippet);
                         codeSnippetTextView.setText(codeSnippet);
                         return true;
                     case R.id.menu_search:
-                        String codeSnippet1 = readFileFromAssets("pra2.java");
+                        String codeSnippet1 = readFileFromAssets("pra9.java");
                         TextView codeSnippetTextView1 = findViewById(R.id.code_snippet);
                         codeSnippetTextView1.setText(codeSnippet1);
                         return true;
@@ -77,11 +77,13 @@ public class pra2 extends AppCompatActivity implements View.OnClickListener{
         return codeSnippet;
 
     }
+
     @Override
     public void onClick(View view) {
         Intent i;
 
         i = new Intent(this, practicals.class);
         startActivity(i);
+
     }
 }

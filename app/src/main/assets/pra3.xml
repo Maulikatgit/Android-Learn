@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonts"
+            android:text="Enter name : "/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonts"
+            android:layout_width="200dp"
+            android:inputType="text"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonts"
+            android:textSize="20sp"
+            android:text="Enter email ID : "/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonts"
+            android:layout_width="200dp"
+            android:inputType="textEmailAddress"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonts"
+            android:textSize="20sp"
+            android:text="Enter contact no : "/>
+
+        <EditText
+            android:id="@+id/contact"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonts"
+            android:layout_width="200dp"
+            android:inputType="numberDecimal"/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Select your gender : "
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonts"
+            android:layout_span="2"/>
+
+    </TableRow>
+
+        <TableRow>
+
+            <RadioGroup
+            android:id="@+id/gendergrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:gravity="center">
+
+                <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/fonts"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+
+                <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Female"
+                android:fontFamily="@font/fonts"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+                <RadioButton
+                android:id="@+id/other"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/fonts"
+                android:layout_height="wrap_content"
+                android:text="Other"/>
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:text="Select your hobbies : "
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonts"
+            android:layout_span="2"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+            android:id="@+id/read"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/fonts"
+            android:layout_gravity="end"
+            android:text="Reading"/>
+
+            <CheckBox
+            android:id="@+id/dance"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/fonts"
+            android:layout_gravity="center"
+            android:text="Dancing"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+            android:id="@+id/sing"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/fonts"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:text="Singing"/>
+
+            <CheckBox
+            android:id="@+id/cycle"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/fonts"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cycling"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+            android:id="@+id/submitForm"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:text="Submit"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="90dp"
+            android:fontFamily="@font/fonts"
+            android:layout_marginRight="90dp"
+            android:layout_span="2"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
