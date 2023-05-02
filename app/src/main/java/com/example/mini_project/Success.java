@@ -16,7 +16,7 @@ public class Success extends AppCompatActivity {
 
     CircularProgressBar circularProgressBar;
     TextView rs;
-    int correct, wrong;
+    int correct, wrong, sizeofque;
     LinearLayout btn;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -26,13 +26,14 @@ public class Success extends AppCompatActivity {
 
         correct = getIntent().getIntExtra("correct", 0);
         wrong = getIntent().getIntExtra("wrong", 0);
+        sizeofque = getIntent().getIntExtra("sizeofque", 0);
 
         circularProgressBar = findViewById(R.id.circularProgressBar);
         rs = findViewById(R.id.rs);
         btn = findViewById(R.id.btn);
 
         circularProgressBar.setProgress(correct);
-        rs.setText(correct + "/4");
+        rs.setText(correct + "/" + sizeofque);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
