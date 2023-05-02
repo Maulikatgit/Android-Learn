@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -25,6 +26,7 @@ public class eg1 extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pra1);
+
 
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv1.setOnClickListener(this);
@@ -45,14 +47,22 @@ public class eg1 extends AppCompatActivity implements View.OnClickListener {
                         String codeSnippet = readFileFromAssets("eg1.xml");
                         TextView codeSnippetTextView = findViewById(R.id.code_snippet);
                         codeSnippetTextView.setText(codeSnippet);
+                        ImageView profileImageView = findViewById(R.id.iv2);
+                        profileImageView.setVisibility(View.INVISIBLE);
                         return true;
                     case R.id.menu_search:
                         String codeSnippet1 = readFileFromAssets("eg1.java");
                         TextView codeSnippetTextView1 = findViewById(R.id.code_snippet);
                         codeSnippetTextView1.setText(codeSnippet1);
+                        ImageView profileImageView2 = findViewById(R.id.iv2);
+                        profileImageView2.setVisibility(View.INVISIBLE);
                         return true;
                     case R.id.menu_profile:
-                        // Handle the Notifications menu item
+                        String codeSnippet2 = readFileFromAssets("");
+                        TextView codeSnippetTextView2 = findViewById(R.id.code_snippet);
+                        codeSnippetTextView2.setText(codeSnippet2);
+                        ImageView profileImageView1 = findViewById(R.id.iv2);
+                        profileImageView1.setVisibility(View.VISIBLE);
                         return true;
                 }
                 return false;

@@ -45,14 +45,23 @@ public class eg4 extends AppCompatActivity implements View.OnClickListener {
                         String codeSnippet = readFileFromAssets("eg4.xml");
                         TextView codeSnippetTextView = findViewById(R.id.code_snippet);
                         codeSnippetTextView.setText(codeSnippet);
+                        ImageView profileImageView1 = findViewById(R.id.iv2);
+                        profileImageView1.setVisibility(View.INVISIBLE);
                         return true;
                     case R.id.menu_search:
                         String codeSnippet1 = readFileFromAssets("eg4.java");
                         TextView codeSnippetTextView1 = findViewById(R.id.code_snippet);
                         codeSnippetTextView1.setText(codeSnippet1);
+                        ImageView profileImageView2 = findViewById(R.id.iv2);
+                        profileImageView2.setVisibility(View.INVISIBLE);
                         return true;
                     case R.id.menu_profile:
-                        // Handle the Notifications menu item
+                        String codeSnippet2 = readFileFromAssets("");
+                        TextView codeSnippetTextView2 = findViewById(R.id.code_snippet);
+                        codeSnippetTextView2.setText(codeSnippet2);
+                        ImageView profileImageView3 = findViewById(R.id.iv2);
+                        profileImageView3.setImageResource(R.drawable.eg4);
+                        profileImageView3.setVisibility(View.VISIBLE);
                         return true;
                 }
                 return false;

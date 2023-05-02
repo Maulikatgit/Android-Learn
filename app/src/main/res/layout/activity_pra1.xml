@@ -50,6 +50,13 @@
             android:fontFamily="monospace" />
     </ScrollView>
 
+    <ImageView
+        android:id="@id/iv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/eg1"
+        android:visibility="gone"/>
+
     <!-- Bottom navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
