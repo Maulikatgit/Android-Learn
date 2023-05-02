@@ -1,7 +1,6 @@
 package com.example.mini_project;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
@@ -10,11 +9,7 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -23,7 +18,7 @@ public class quiz extends AppCompatActivity {
     TextView question, option_a, option_b, option_c, option_d, qcount, timer;
 
     AnimationDrawable anim;
-    int sizeofque = 4;
+    int sizeofque = 5;
 
     private  TimerDialog timerDialog;
 
