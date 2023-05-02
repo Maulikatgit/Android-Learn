@@ -56,7 +56,10 @@
             android:name=".pra6"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
+        <activity
+            android:name=".practicals"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".eg1"
             android:exported="false"
