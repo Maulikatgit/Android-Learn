@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.cv1:
             case R.id.cv3:
-            case R.id.cv4:
                 i = new Intent(this, topics.class);
                 startActivity(i);
                 break;
@@ -51,6 +50,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Uri uri = Uri.parse("https://github.com/Maulikatgit/Android-Learn");
                 i = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(Intent.createChooser(i, "Share Application"));
+                break;
+
+            case R.id.cv4:
+                i = new Intent(this, examples.class);
+                startActivity(i);
                 break;
 
             case R.id.cv5:

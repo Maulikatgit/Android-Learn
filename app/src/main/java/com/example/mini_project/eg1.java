@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class pra1 extends AppCompatActivity implements View.OnClickListener {
+public class eg1 extends AppCompatActivity implements View.OnClickListener {
 
     public ImageView iv1;
 
@@ -29,9 +29,10 @@ public class pra1 extends AppCompatActivity implements View.OnClickListener {
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv1.setOnClickListener(this);
 
-        String codeSnippet = readFileFromAssets("pra1.xml");
+        String codeSnippet = readFileFromAssets("eg1.xml");
         TextView codeSnippetTextView = findViewById(R.id.code_snippet);
         codeSnippetTextView.setText(codeSnippet);
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setBackgroundColor(getResources().getColor(R.color.lavender));
 
@@ -41,12 +42,12 @@ public class pra1 extends AppCompatActivity implements View.OnClickListener {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.menu_home:
-                        String codeSnippet = readFileFromAssets("pra1.xml");
+                        String codeSnippet = readFileFromAssets("eg1.xml");
                         TextView codeSnippetTextView = findViewById(R.id.code_snippet);
                         codeSnippetTextView.setText(codeSnippet);
                         return true;
                     case R.id.menu_search:
-                        String codeSnippet1 = readFileFromAssets("pra1.java");
+                        String codeSnippet1 = readFileFromAssets("eg1.java");
                         TextView codeSnippetTextView1 = findViewById(R.id.code_snippet);
                         codeSnippetTextView1.setText(codeSnippet1);
                         return true;
@@ -81,7 +82,7 @@ public class pra1 extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View view) {
         Intent i;
 
-        i = new Intent(this, practicals.class);
+        i = new Intent(this, examples.class);
         startActivity(i);
 
     }

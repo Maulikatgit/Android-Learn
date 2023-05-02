@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Mini_Project</string>
 
+    <string name="navigation_open">Open Navigation drawer</string>
+    <string name="navigation_close">Close Navigation drawer</string>
+
 
     <string name="topics_tv1">Android \nIntroduction</string>
     <string name="topics_tv2">Android\nArchitecture</string>
