@@ -46,22 +46,22 @@ public class Assignment extends AppCompatActivity implements View.OnClickListene
                 break;
 
             case R.id.tp2:
-                i = new Intent(this, pra2.class);
+                i = new Intent(this, PDF_Viewer1.class);
                 startActivity(i);
                 break;
 
             case R.id.tp3:
-                i = new Intent(this, pra3.class);
+                i = new Intent(this, PDF_Viewer2.class);
                 startActivity(i);
                 break;
 
             case R.id.tp4:
-                i = new Intent(this, pra4.class);
+                i = new Intent(this, PDF_Viewer3.class);
                 startActivity(i);
                 break;
 
             case R.id.tp5:
-                i = new Intent(this, pra5.class);
+                i = new Intent(this, PDF_Viewer4.class);
                 startActivity(i);
                 break;
         }

@@ -24,7 +24,7 @@ public class PDF_Viewer extends AppCompatActivity {
         setContentView(R.layout.activity_pdf_viewer);
 
         PDFView pdfView = findViewById(R.id.pdfview);
-        pdfView.fromAsset("resume.pdf").load();
+        pdfView.fromAsset("Assignment_1.pdf").load();
 
     }
 

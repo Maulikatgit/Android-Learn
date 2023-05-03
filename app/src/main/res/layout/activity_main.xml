@@ -105,14 +105,14 @@
                     android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/tutorial"/>
+                    android:src="@drawable/practical"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Practicals"
                     android:layout_marginStart="41dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="2dp"
                     android:textColor="@color/white"
                     android:layout_below="@id/iv2"
                     android:textSize="20sp"
@@ -142,7 +142,7 @@
                     android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/tutorial"/>
+                    android:src="@drawable/assignment"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -176,10 +176,11 @@
 
                 <ImageView
                     android:id="@+id/iv4"
-                    android:layout_centerInParent="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="60dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/tutorial"/>
+                    android:src="@drawable/example"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -188,7 +189,7 @@
                     android:textColor="@color/white"
                     android:layout_below="@id/iv4"
                     android:layout_marginStart="45dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="15dp"
                     android:textSize="20sp"
                     android:textStyle="bold">
                 </TextView>
@@ -216,7 +217,7 @@
                     android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/tutorial"/>
+                    android:src="@drawable/quiz"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -253,7 +254,7 @@
                     android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/tutorial"/>
+                    android:src="@drawable/share"/>
 
                 <TextView
                     android:layout_width="wrap_content"

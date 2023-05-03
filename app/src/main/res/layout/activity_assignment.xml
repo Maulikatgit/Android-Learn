@@ -23,8 +23,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Practicals"
-            android:layout_marginStart="90dp"
+            android:text="Assignment"
+            android:layout_marginStart="65dp"
             android:gravity="center_vertical"
             android:fontFamily="sans-serif-medium"
             android:textSize="30sp"
